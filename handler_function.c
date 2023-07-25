@@ -5,6 +5,7 @@
  * @format: a string or char
  * @i: a pointer to an integer
  * @arg_u: a variadic parameter
+ * Return: 0
  */
 int specifier_handler(const char *format, int *i, va_list arg_u)
 {
@@ -22,11 +23,11 @@ int specifier_handler(const char *format, int *i, va_list arg_u)
 	{
 		counts = write(1, &format[*i + 1], 1);
 		(*i) += 2;
-		return counts;
+		return (counts);
 	}
 	if (format[*i + 1] == '\0')
 	{
-		return -1;
+		return (-1);
 	}
-	return 0;
+	return (0);
 }
