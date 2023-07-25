@@ -32,12 +32,12 @@ int _printf(const char *format, ...)
 			if (counts == -1)
 			{
 				va_end(arg_u);
-				return -1;
+				return (-1);
 			}
 			total_num += counts;
 		}
 	}
 
 	va_end(arg_u);
-	return total_num;
+	return (total_num);
 }
