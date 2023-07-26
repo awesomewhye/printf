@@ -10,9 +10,11 @@ int (*specifier_checker(const char *format))(va_list)
 {
 	int j = 0;
 
-	func_s specifiers[4] = {{"c", prints_char},
+	func_s specifiers[6] = {{"c", prints_char},
 		{"s", prints_str},
 		{"%", prints_percent},
+		{"d", prints_dec},
+		{"i", prints_int},
 		{NULL, NULL}};
 
 	while (specifiers[j].s != NULL)

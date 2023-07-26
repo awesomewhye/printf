@@ -30,5 +30,6 @@ int prints_str(va_list);
 int prints_int(va_list);
 int prints_percent(va_list);
 int prints_dec(va_list);
+int prints_num(va_list);
 
 #endif /*_MAIN_H_*/

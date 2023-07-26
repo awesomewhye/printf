@@ -63,3 +63,32 @@ int prints_percent(__attribute__((unused))va_list arg_u)
 
 	return (total_num);
 }
+
+/**
+  * prints_dec - prints a decimal
+  * @arg_u: variadic parameter
+  * Return: number of decimal printed
+  */
+int prints_dec(va_list arg_u)
+{
+	int total_num = 0;
+
+	total_num = prints_num(arg_u);
+
+	return (total_num);
+}
+
+
+/**
+  * prints_int - prints an integer
+  * @arg_u: variadic parameter
+  * Return: number of integer printed
+  */
+int prints_int(va_list arg_u)
+{
+	int total_num = 0;
+
+	total_num = prints_num(arg_u);
+
+	return (total_num);
+}
