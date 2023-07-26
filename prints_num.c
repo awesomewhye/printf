@@ -9,7 +9,7 @@ int prints_num(va_list arg_u)
 {
 	int unknown_variable;
 	unsigned int number;
-	int total_num = o;
+	int total_num = 0;
 	int counts = 1;
 
 	unknown_variable = va_arg(arg_u, int);
